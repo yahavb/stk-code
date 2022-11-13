@@ -97,8 +97,8 @@ void GameProtocol::sendActions()
         if (Network::m_connection_debug)
         {
             Log::verbose("GameProtocol",
-                "Controller action: %d %d %d %d %d %d",
-                a.m_ticks, a.m_kart_id, a.m_action, a.m_value, a.m_value_l,
+                "Controller action: %s %d %d %d %d %d %d",
+                peer->getAddress().toString().c_str(),a.m_ticks, a.m_kart_id, a.m_action, a.m_value, a.m_value_l,
                 a.m_value_r);
         }
         m_data_to_send->addUInt32(a.m_ticks);
