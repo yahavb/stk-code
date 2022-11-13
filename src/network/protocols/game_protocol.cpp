@@ -223,7 +223,7 @@ void GameProtocol::handleControllerAction(Event *event)
         {
             const auto& a = decompressAction(w, x, y, z);
             Log::verbose("GameProtocol",
-                "Controller action:%s %d %d %d %d %d %d",
+                "Controller action:;%s %d %d %d %d %d %d",
                 peer->getAddress().toString().c_str(),cur_ticks, kart_id, std::get<0>(a), std::get<1>(a),
                 std::get<2>(a), std::get<3>(a));
         }
