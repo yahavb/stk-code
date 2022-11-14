@@ -98,7 +98,7 @@ void GameProtocol::sendActions()
         {
             Log::verbose("GameProtocol",
                 "Controller action: %s %d %d %d %d %d %d",
-                "address",a.m_ticks, a.m_kart_id, a.m_action, a.m_value, a.m_value_l,
+                "dummyaddress",a.m_ticks, a.m_kart_id, a.m_action, a.m_value, a.m_value_l,
                 a.m_value_r);
         }
         m_data_to_send->addUInt32(a.m_ticks);
