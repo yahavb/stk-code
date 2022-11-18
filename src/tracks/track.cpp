@@ -178,7 +178,7 @@ Track::Track(const std::string &filename)
     m_startup_run           = false;
     m_red_flag = m_blue_flag =
         btTransform(btQuaternion(0.0f, 0.0f, 0.0f, 1.0f));
-    m_default_number_of_laps = 30;
+    m_default_number_of_laps = 10;
     m_all_nodes.clear();
     m_static_physics_only_nodes.clear();
     m_all_cached_meshes.clear();
@@ -573,7 +573,7 @@ void Track::loadTrackInfo()
 
     getMusicInformation(filenames, m_music);
     if (m_default_number_of_laps <= 0)
-        m_default_number_of_laps = 30;
+        m_default_number_of_laps = 10;
     m_actual_number_of_laps = m_default_number_of_laps;
 
     // Make the default for auto-rescue in battle mode and soccer mode to be false
