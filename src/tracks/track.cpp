@@ -178,7 +178,7 @@ Track::Track(const std::string &filename)
     m_startup_run           = false;
     m_red_flag = m_blue_flag =
         btTransform(btQuaternion(0.0f, 0.0f, 0.0f, 1.0f));
-    m_default_number_of_laps = 3;
+    m_default_number_of_laps = 30;
     m_all_nodes.clear();
     m_static_physics_only_nodes.clear();
     m_all_cached_meshes.clear();
