@@ -573,7 +573,7 @@ void Track::loadTrackInfo()
 
     getMusicInformation(filenames, m_music);
     if (m_default_number_of_laps <= 0)
-        m_default_number_of_laps = 3;
+        m_default_number_of_laps = 30;
     m_actual_number_of_laps = m_default_number_of_laps;
 
     // Make the default for auto-rescue in battle mode and soccer mode to be false
