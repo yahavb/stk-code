@@ -64,7 +64,7 @@
 #include <iostream>
 #include <iterator>
 
-
+int ServerLobby::m_fixed_laps = -1;
 // ========================================================================
 class SubmitRankingRequest : public Online::XMLRequest
 {
