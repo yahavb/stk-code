@@ -1683,7 +1683,10 @@ int handleCmdLine(bool has_server_config, bool has_parent_process)
         else
         {
             Log::verbose("main", "You chose to have %d laps.", laps);
-            RaceManager::get()->setNumLaps(laps);
+            if (NetworkConfig::get()->isServer())
+              ServerLobby::m_fixed_laps = laps;
+            else
+              RaceManager::get()->setNumLaps(laps);
         }
     }   // --laps
 

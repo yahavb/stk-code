@@ -2614,7 +2614,7 @@ void ServerLobby::startSelection(const Event *event)
             Track* t = track_manager->getTrack(*it);
             assert(t);
             //m_default_vote->m_num_laps = t->getDefaultNumberOfLaps();
-            m_default_vote->m_num_laps = 10;
+            m_default_vote->m_num_laps = m_fixed_laps;
             m_default_vote->m_reverse = rg.get(2) == 0;
             break;
         }
